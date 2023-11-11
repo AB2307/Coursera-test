@@ -1,11 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello Coursera</title>
+	<meta charset="utf-8"> <!-- utf-8 is the most commonly used charset Meta tag is used to convey info to the outside servers -->
+	<title>Hi bro wsg</title> <!-- title is a necessity -->
+	<style>
+		p {
+			color:blue;
+			font-size:20px;
+			width: 200px;
+		}
+
+	h1 {
+		color:green;
+		font-size:20px;
+		text-align: center;
+
+		}
+	</style>		
 </head>
 <body>
-<h1>hello bna!</h1>
+	Coursera is so cool! I'm learning so much.
+	<div>DIV 1 some content here</div> <!-- div is a block tag(aka flow content) and thus it needs it's seperate line, however, span is an IN-LINE(aka phrasing content) tag and thus it could also fit in the same line. -->
+	<div>DIV 2 s: right after div 1</div>
+	<span> span 1 : right after div 2</span>
+	<div> div 3 : right after span 1
+	<span>span 2: inside div 3</span>
+	Continue element of div 3
+	</div>
+<!-- semantic elements:  (helps for structure)-->
+	<h1> THIS HEading will be edited by CSS </h1>
+	<h2> this is less imp than h1 </h2> 
+	<h3> heading 3... little less imp, and so on and on... the last heading 6 is least imp </h3>
+
+	<header>
+		some imp heading info here, about the company's name, logo, tag line etc.
+		<nav>
+			usually contains links to other parts of the html.
+		</nav>
+	</header>
+
+	<section> <!-- article should always go in section in html 5, but article could also have a section in it. -->
+
+		<article> Article 1 </article>
+		<article> Article 2</article>
+	</section>
+
+	<aside>
+		some unimprotantinfo here
+	</aside>
+
+	<footer>
+		JHU copyight 2015
+	</footer>
+<!-- semantic elements over -->
+
+
+<!-- lists: organisation tool -- -->
+    <ul>
+    	<li>list item #1</li>
+    	<li>item #2</li>
+    	<li>item #3... this can go forever</li>
+    	<li>cookies</li>
+    	<ul>
+    		<li>here is a nested list:</li>
+    		<li>chocolate chip</li>
+    		<li>oreo flarou</li>
+    	</ul>
+    </ul>
+    
+<!-- you could use ol for ordered list instead of ul, the format is same    	 -->
+
+<!-- entities: some symbols like <,>,& are written as &lt;,&gt;,&amp; respectively:
+
+ &nbsp; is a command if you wanna put certain words to the next line when the limit goes past......................................................... opk osos ms  --- like this line if you want opk, osos, and ms on the same line, you use nbsp.  -->
+ <!-- syntax and using of nbsp
+Using only HTML, how would you make sure that 3 words in an HTML document ALWAYS appear together on 1 line, even if the text word-wraps because the browser window is too narrow for that text line? ans : Place &nbsp; entity reference after the 1st word and after the 2nd word (with no spaces in between words and entity references) -->
+
+<!-- Linking: The anchor tag -->
+
+<section> We can link files like this:
+ <a href="index.html" title="same dir link"> linking to a file in the same directory </a>
+ <a href="index.html" title="same dir link"> <div> linking to a file in the same directory </div> </a> 
+ <!-- The second one goes in a seperate link. Why? The anchor tag, it's both a inline and block element, thereofre both can work
+ </section> -->
+<a href="https://www.youtube.com/" target="_blank" title="Like this site!" > Youtube link </a> 
+<!-- The target blank allways the link to open in another tab -->
+
+<!-- How to link pages to move in the same doc?
+First let's make 5 sections:, after i made that scroll all the way to the bottom -->
+
+<section id="section1">
+	<h3> 
+		<p>
+			Mein pagal hu aur mera naam bot hai. this is sec 1
+
+Is there a word which means block of text, or section of text? I'm trying to describe how similar discontinuous parts of a paper are, in order to recommend that they be reorganized. Section doesn't work, because section would refer to the formal section that text is in (which includes the block I'm trying to reference, as well as lots of additional text--e.g. section 4.1).
+
+To me, passage has too much of a literary connotation (or refers to something that is specifically singled out through indentation or quotes). But perhaps I'm misinformed. The text I'm referring to is part of a scientific paper. Any suggestions?
+	</h3>
+</section>
+<br><br><br><br><br><br>
+<section id="section2">
+	<h3> 
+		<p>
+			Mein pagal hu aur mera naam bot hai. this is sec 2
+
+Is there a word which means block of text, or section of text? I'm trying to describe how similar discontinuous parts of a paper are, in order to recommend that they be reorganized. Section doesn't work, because section would refer to the formal section that text is in (which includes the block I'm trying to reference, as well as lots of additional text--e.g. section 4.1).
+
+To me, passage has too much of a literary connotation (or refers to something that is specifically singled out through indentation or quotes). But perhaps I'm misinformed. The text I'm referring to is part of a scientific paper. Any suggestions?
+	</h3>
+</section> <br><br><br><br><br><br><br>
+
+<section id="section3">
+	<h3> 
+		<p>
+			Mein pagal hu aur mera naam bot hai. this is sec 3
+
+Is there a word which means block of text, or section of text? I'm trying to describe how similar discontinuous parts of a paper are, in order to recommend that they be reorganized. Section doesn't work, because section would refer to the formal section that text is in (which includes the block I'm trying to reference, as well as lots of additional text--e.g. section 4.1).
+
+To me, passage has too much of a literary connotation (or refers to something that is specifically singled out through indentation or quotes). But perhaps I'm misinformed. The text I'm referring to is part of a scientific paper. Any suggestions?
+	</h3>
+</section>
+<br><br><br><br><br><br><br><br>
+<section id="section4">
+	<h3> 
+		<p>
+			Mein pagal hu aur mera naam bot hai. this is sec 4
+
+Is there a word which means block of text, or section of text? I'm trying to describe how similar discontinuous parts of a paper are, in order to recommend that they be reorganized. Section doesn't work, because section would refer to the formal section that text is in (which includes the block I'm trying to reference, as well as lots of additional text--e.g. section 4.1).
+
+To me, passage has too much of a literary connotation (or refers to something that is specifically singled out through indentation or quotes). But perhaps I'm misinformed. The text I'm referring to is part of a scientific paper. Any suggestions?
+	</h3>
+</section>
+<br><br><br><br><br><br><br>
+<section id="section5">
+	<h3> 
+		<p>
+			Mein pagal hu aur mera naam bot hai. this is sec 5
+
+Is there a word which means block of text, or section of text? I'm trying to describe how similar discontinuous parts of a paper are, in order to recommend that they be reorganized. Section doesn't work, because section would refer to the formal section that text is in (which includes the block I'm trying to reference, as well as lots of additional text--e.g. section 4.1).
+
+To me, passage has too much of a literary connotation (or refers to something that is specifically singled out through indentation or quotes). But perhaps I'm misinformed. The text I'm referring to is part of a scientific paper. Any suggestions?
+	</h3>
+</section>
+
+<ul>
+	<li><a href="#section1">#Section 1></a></li>
+	<li><a href="#section2">#Section 2></a></li>
+	<li><a href="#section3">#Section 3></a></li>
+	<li><a href="#section4">#Section 4></a></li>
+	<li><a href="#section5">#Section 5></a></li>
+</ul>
+
+<!-- How to include image in website? REMEMBER: ALWAYS USE WIDTH AND HEIGHT TAGS CZ THEY MAKE THE IMAGE LOAD FASTER.-->
+<!-- Option 1: THis links the image from Sublime text (Internal folder - Or you could just mention the path) -->
+<p>
+<IMG src="Valorant_1591218052835_1591218061187.webp" width="400 " height="235" alt="Valorant image"> &quot;Elevate your Valorant gaming experience with stunning HD computer wallpapers that bring your favorite video game characters to life.&quot;
+</p>
+<!-- Option 2: This links the image externally, from google or any browser, you just have to copy image address. -->
+<p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1byX57F0YRr18DRhAl59J9hTWxrvTQQ2jgQY6pzVakr9fODFMwkkecAUTv9-4mI1bTBc&usqp=CAU" height="640" width="900">
+</p>
+
+
 </body>
-</html>
+
+
+</body>
+</html>	
+
