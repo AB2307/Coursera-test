@@ -1,0 +1,132 @@
+/*The BOX MODEL
+	if you open this in google, and right click to inspect, you'' see a box like image in the bottom 
+	when u scroll down. then you can see a defaulteed margin, if you set the margin to zero, and the padding to zero again, then it goes away. */
+
+body {
+	background-color: lightyellow;
+	padding: 0;
+	margin: 0;
+}
+
+/*this will apply to every heading 2, as it's an element selector.*/
+h2 {
+	color:red;
+	text-align: center;
+}
+/*this will apply to everything from this point onwards which could be p or div or section, only if it has <p class = "highlight">*/
+.highlight {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	background-color: cyan;
+	opacity: 0.6;
+
+}
+/*this will apply only once if use, <div id = "mainpoint">*/
+#mainpoint {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	background-color: indianred;
+	opacity: 0.7;
+}
+/*will apply to all h1*/
+h1 {
+	color: blue;
+	text-align: center;
+}
+
+/*all p elements with class xyz*/
+p.xyz {
+	font-style: italic;
+}
+
+/*all elements with class xyz and oioi*/
+.xyz.oioi {
+	color: red;
+	background-color: black;
+}
+
+/*max styling applied*/
+.per {
+	font-family: Arial, Helvetica, sans-serif;
+	color: limegreen;
+	text-transform: uppercase;
+	text-align: justify;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+
+}
+ 
+
+/*any article element which is a direct child of a sector element*/
+
+section > article {
+	color: green;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/*any h2 element which is a direct child of a section element*/
+
+section > h2 {
+	color: magenta;
+}
+
+/*any article which is a child of a sector element, direct or indirect does not matter*/
+
+section article {
+	color: indianred;
+	font: initial;
+}
+/* this made everything indianred, even the part which was supposed to be green bcoz of the code in line 76, as every article was commanded to change.*/
+
+/*PSEUDO CLASS SELECTORS- These help list elements or anything look like buttons. and give hover etc effect. */
+
+header li {
+	list-style: none;
+}
+/*now we will try to make the list look like buttons, so we removed the bullets, changed the background color, gave a border,color, and made them block elements forcing them to consume all the space in the line, then we shorted the block level elent to width of 200px*/
+a:link, a:visited { 
+	text-decoration: none;
+	background-color: green;
+	border: 1px solid blue;
+	color: black;
+	display: block;
+	width: 200px;
+	text-align: center;
+	margin-bottom: 1px;
+}
+
+a:hover, a:active {
+	background-color: red;
+	color: purple;
+}
+
+/*the nth child function helps us to give a design to any specific element.*/
+header li:nth-child(2) {
+	font-size: 24px;
+
+}
+
+header li:nth-child(odd) {
+	font-size: 50px;
+}
+
+header li:nth-child(7):hover {
+	cursor: pointer;
+	background-color: cyan;
+}
+
+/*in the code below, #mysection is an ID on the section, but .myColor is a class mentioned in the code's section. an ID is considered my specific,
+ and thus ID will be printed and the text will be green, even though it is mentioned before the class command. ignoring the fact, that thew last 
+ one is followed.*/
+
+#mySection {
+  color: green;
+}
+
+.myColor {
+  color: blue;
+}

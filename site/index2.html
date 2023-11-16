@@ -1,3 +1,98 @@
-<html> 
-<h1> Hello my CSS exercise </h1>
+<!-- /*              style tag                  -allows css to hope into html
+		p {
+	color:blue; (; is not always required, but good to use it)
+	each tag has one or more declaration: a declaration has a property and a value, like color and blue. (declatration example is color:blue)
+p is not a tag, it is a selector}*/
+
+/*TYPES OF SELECTORS:
+
+1. element SELECTORS -- like p selector which is attributed to all the paras in the code
+2. class selector-- first define class like:*//*   .blue {
+	color:blue;
+}
+		
+	<p class = "blue">...</p>
+	<p>...</p>
+	<div class = "blue"> ... </div> (then this class defined is gonna apply to any para or div or section or wherever you mention it, like class = "blue")
+/*3. ID selector -- specifying the name of an id withing our html doc, and preceded by #
+eg: #name {
+	color:blueviolet;
+}
+<p>...</p>
+<div id = "name"> ... </div> --> <!-- gonna be in blueviolet
+ -->
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>HTML + CSS</title> 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Simple Selectors (h1) </h1>
+	<h2 id = "Subheading1">Subheading 1 (h2) </h2>
+	<p class="highlight"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+		This is a paragraph is the attribute class = "highlight".
+	</p>
+	<h2>Subheading 2 (h2) </h2>
+	<p id = "mainpoint">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+		This is a pragraph with the attribute id = "mainpoint"
+	</p>
+	<p class="xyz"> Lorem ispum. This is a para with class xyz </p>
+
+	<div>
+      <section id="mySection" class="myColor">
+    I am having a color identity crisis again! Help!
+      </section>
+    </div>
+
+	<section>
+		<h2>Subheading 3 (h2)</h2>
+		<div> 
+		<article>
+			This is an article inside of section, but not direct, as we there is a div tag inside of the section tag, which contains the article tag.
+		</article>
+	    </div>
+	</section>
+
+	<section>
+		<article>
+			This is an article inside of a section DIRECTLY
+		</article>
+	</section>
+
+	<header>
+	<h1> Psuedo CLass selectors </h1>
+	<ul>
+		<li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+		<li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+		<li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></li>
+		<li><a href="#Subheading1">1 (This takes you to the subheading 1)</a></li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	
+	</header>
+
+	<p style="text-align: center;"> This text ought to be centered </p> 
+	<!-- The tag style can also be used this way, but this ain't prefered bcoz you'd have to copy paste the same code everytime you wanna use it again. -->
+
+	<p class ="per"> Hi guys this paragraph, shows the styles that CSS at it's best, all together can apply to a piece of text. 
+	</p> 
+
+	<div style="font-size: 120%;"> Regular text (right now the text is "x" sized)
+		<div style="font-size: 2em;">2em text (the text just turned 2 times the earlier one, thus 2x)
+             <div style="font-size: 2em;">4 em text, the text just turned 2 times the earlier one, thus 4x
+                 <div style="font-size: 0.5em;">2 em again, similarly, 2x</div></div></div>
+	</div>
+
+	
+
+</body>
 </html>
+
