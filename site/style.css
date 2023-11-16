@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*The BOX MODEL
 	if you open this in google, and right click to inspect, you'' see a box like image in the bottom 
 	when u scroll down. then you can see a defaulteed margin, if you set the margin to zero, and the padding to zero again, then it goes away. */
@@ -130,3 +131,6 @@ header li:nth-child(7):hover {
 .myColor {
   color: blue;
 }
+=======
+
+>>>>>>> a6e7cfc7a61e0512c09c48ad981da992bb315740
